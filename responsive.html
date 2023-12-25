@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: url("images/bg.jpg") no-repeat center center fixed ;
+            background-size: cover;
+        }
+
+        .navbar {
+            background:none;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar ul li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            width: 200px;
+            
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white
+        }
+
+        .navbar li a:hover {
+            color: orange
+        }
+
+        .search {
+            float: right;
+            padding: 13px 35px;
+        }
+
+        .navbar input {
+            border: 2px solid red;
+            border-radius: 11px;
+            padding: 3px 8px;
+            width: 129px;
+        }
+
+
+        .container{
+            
+            color: white;
+            position: absolute;
+            top: 35%;
+            left: 32%;
+            
+        }
+        .container h1{
+            font-size: 28px;;
+            border-bottom: 5px solid purple;
+            margin-bottom: 30px;
+            padding: 13px 0px;
+        }
+        .box{
+            width: 100%;
+            border-bottom: 2px solid purple;
+            
+        }
+        .box input{
+            background: none;
+            width: 75%;
+            margin: 12px 23px;
+            padding: 12px 16px;
+            font-size: 20px;
+            border: none;
+            color: white;
+        }
+        .btn{
+            color: white;
+            background: none;
+            cursor: pointer;
+            width: 25%;
+            padding: 8px;
+            margin: 12px 0px;
+            border: 2px solid purple;
+            border-radius: 9px;
+            position: absolute;
+            left:  38%;
+}
+.btn:hover{
+            color:cyan;
+            background: white;
+            
+}
+.navbar ul li ul{
+           display: none;
+                
+}
+.navbar ul li:hover> ul{
+                display: block;
+                }
+                
+ .navbar ul li ul li a{
+                
+            }
+                        
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                  <li class="dropdown">
+                      <a class="dropbtn" href="#">SERVICES</a>
+                      <ul>
+                          <li><a href="#">FOOTBALL</a></li>
+                          <li><a href="#">CRICKET</a</li>
+                          <li> <a href="#">BASKETBALL</a></li>
+                      </ul>
+                  </li>
+                <li><a href="#">CONTACT US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="SEARCH">
+                </div>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>LOGIN TO CODE WITH SOHAM</h1>
+            <div class="box">
+                <input type="email" name="email" id="email" placeholder="SIGN IN WITH UR EMAIL">
+            </div>
+            <div class="box">
+                <input type="password" name="password" id="password" placeholder="PASSWORD">
+            </div>
+            <button class="btn">SIGN IN</button>
+        </div>
+    </header>
+
+</body>
+
+</html>
